@@ -5,72 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <style>
-    @media only screen and(max-width:600px){
-        li{
-            background-color: blue;
-        }
-    }
+
 </style>
 <body>
     <nav class="mynav">
         
     <ul class="menu-items">
-        <li id="logo"><img src="images/Schermopname (212).svg" alt=""></li>
-        <li>heren  <img src="images/arrow_down.png" id="arrowdown" height="10" width="10"><button class="btn"></button></li>
-        <li>schoenen <img src="images/arrow_down.png" id="arrowdown" height="10" width="10"></li>
-        <li><svg xmlns="http://www.w3.org/2000/svg" class="person" width="48" height="48" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+        <li id="logo"><a href="index.php"><img src="images/Schermopname (212).svg" width="122" height="50" alt=""></a></li>
+        <li><a href="heren.php"  style="color: white; text-decoration: none;" >heren <img src="images/arrow_down.png" id="arrowdown" height="10" width="10"></a></li>
+        <li><a href="schoenen.php" style="color: white; text-decoration: none">schoenen <img src="images/arrow_down.png" id="arrowdown" height="10" width="10"></a></li>
+        <li><a href="login.php" style="color: white"><svg xmlns="http://www.w3.org/2000/svg" class="person" width="48" height="48" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
             <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-          </svg><!--<img src="person (4).svg" class="person" width="48" height="48" alt="">!--></li>
+          </svg></a></li>
+          <li class="inputfield"><input class="input__input" type="search" height="60" width="400px" id="header-search" name="q" placeholder="Waar ben je naar op zoek?" aria-label="Zoeken" data-hook-search-suggestions="" autocomplete="off" data-loaded-search-suggestions=""><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search" style="color: white; margin-top: 5px;" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+</svg></li>
           <li><div class="cartamount">0</div></li>
-        <li><img src="shoppingbag.png" width="50" height="50" class="shoppingcart"></li> 
+        <li><img src="images/shoppingbag.png" width="50" height="50" class="shoppingcart"></li> 
     </ul>
 </nav>
-<h1 class="uitgelicht">uitgelicht</h1>
-<div class="shop">
-    
-    <div class="item">
-        <img src="images/img-1.jpg" width="200" alt="">
-        <div class="details">
-            mooi overhemd
+<?php
 
-        </div>
-        <div class="quantity">$19.99</div>
-    </div>
-    <div class="item">
-        <img src="images/img-2.jpg" width="200"  alt="">
-        <div class="details">
-            ook een mooi overhemd
-
-        </div>
-        <div class="quantity">$19.99</div>
-    </div>
-    <div class="item">
-        <img src="images/img-3.jpg" width="200" alt="">
-        <div class="details">
-            mooi t-shirt
-        </div>
-        <div class="quantity">$19.99</div>
-    </div>
-    <div class="item">
-        <img src="images/img-4.jpg" width="200" alt="">
-        <div class="details">
-            mooi pak 
-
-        </div>
-        <div class="quantity">$19.99</div>
-    </div>
-    <div class="item">
-        <img src="images/img-4.jpg" width="200" alt="">
-        <div class="details">
-            mooi pak
-
-        </div>
-        <div class="quantity">$19.99</div>
-    </div>
-</div>
+?>
     <script src="script.js"></script>
 </body>
 </html>
