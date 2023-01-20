@@ -65,6 +65,13 @@ li{
     height: 50px;
 }
 
+.username{
+    margin-top: 10px;
+    margin-left: 1125px !important;
+    position: absolute !important;
+    box-sizing: content-box !important;
+}
+
 input{
     height: 40px;
     border-radius: 5px;
@@ -140,3 +147,7 @@ span{
     color: pink;
 }
 
+#errpwd{
+    color: red;
+    font-size: 60px;
+}
